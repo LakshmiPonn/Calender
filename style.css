@@ -1,0 +1,68 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendar {
+    border: 1px solid #ccc;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.weekdays {
+    display: flex;
+    background-color: #ddd;
+}
+
+.weekdays div {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.days div:hover {
+    background-color: #f4f4f4;
+}
+
+.days div.disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.days div.holiday {
+    background-color: #ffcccc;
+    color: #d00;
+    font-weight: bold;
+}
